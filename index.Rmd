@@ -1,8 +1,8 @@
 ---
-title: "Engagement Survey Feedback Presentation Slides (Example/Tutorial)"
+title: "Engagement Survey Feedback Presentation Slides (Tutorial)"
 subtitle: "⚔<br/>powered by xaringan"
-author: "John Kulas (via Yihui Xie)"
-institute: "erg, RStudio, PBC"
+author: "John Kulas"
+institute: "erg"
 date: "updated: `r Sys.Date()`"
 output:
   xaringan::moon_reader:
@@ -14,7 +14,13 @@ output:
       countIncrementalSlides: false
 ---
 
-background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/be/Sharingan_triple.svg)
+.right-column[
+![](https://upload.wikimedia.org/wikipedia/commons/b/be/Sharingan_triple.svg)]
+
+.left-column[
+![](erg5.png)
+]
+
 
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE)
