@@ -3,7 +3,7 @@ title: "Engagement Survey Feedback Presentation Slides (Example/Tutorial)"
 subtitle: "⚔<br/>powered by xaringan"
 author: "John Kulas (via Yihui Xie)"
 institute: "erg, RStudio, PBC"
-date: "2016/12/12 (updated: `r Sys.Date()`)"
+date: "updated: `r Sys.Date()`"
 output:
   xaringan::moon_reader:
     lib_dir: libs
