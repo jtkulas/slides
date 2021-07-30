@@ -76,6 +76,42 @@ class: inverse, middle, right
 ]
 
 
+---
+name: keyboard-demo
+class: center, middle, inverse
+
+# .fancy[Keyboard shortcuts]
+
+Press `h` or `?` to see the `remark.js` [keyboard shortcuts](https://bookdown.org/yihui/rmarkdown/xaringan-key.html). 
+
+--
+
+A useful workflow for presenting; if you have two screens, turn off display mirroring then press `c` to clone:
+
+.pull-left[
+
+# <svg aria-hidden="true" role="img" viewBox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:white;overflow:visible;position:relative;"><path d="M528 0H48C21.5 0 0 21.5 0 48v320c0 26.5 21.5 48 48 48h192l-16 48h-72c-13.3 0-24 10.7-24 24s10.7 24 24 24h272c13.3 0 24-10.7 24-24s-10.7-24-24-24h-72l-16-48h192c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zm-16 352H64V64h448v288z"/></svg>
+
+On the presentation screen:
+
+Move cloned window to this screen &lt;br&gt;
+Then press `f` for full-screen mode
+
+]
+
+.pull-right[
+
+# <svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:white;overflow:visible;position:relative;"><path d="M624 416H381.54c-.74 19.81-14.71 32-32.74 32H288c-18.69 0-33.02-17.47-32.77-32H16c-8.8 0-16 7.2-16 16v16c0 35.2 28.8 64 64 64h512c35.2 0 64-28.8 64-64v-16c0-8.8-7.2-16-16-16zM576 48c0-26.4-21.6-48-48-48H112C85.6 0 64 21.6 64 48v336h512V48zm-64 272H128V64h384v256z"/></svg>
+
+On your laptop screen:
+
+Press `p` for presenter mode on laptop &lt;br&gt;
+Wish you had used `???` to add [presenter notes](https://bookdown.org/yihui/rmarkdown/xaringan-format.html#xaringan-notes)
+]
+
+???
+
+Don't forget to add presenter notes- when you are in presenter mode you see them but your audience does not! You use three question marks at the bottom of your slide to separate out your notes.
 
 ---
 name: setup
@@ -241,8 +277,8 @@ With R Markdown, you are used to this:
 
 With **xaringan** (no `pandoc`!):
 
-<div id="htmlwidget-39b43b3cc8ae5bf8d7a2" style="width:75%;height:50%;" class="grViz html-widget"></div>
-<script type="application/json" data-for="htmlwidget-39b43b3cc8ae5bf8d7a2">{"x":{"diagram":"digraph {\n\ngraph [layout = \"dot\",\n       outputorder = \"edgesfirst\",\n       bgcolor = \"white\",\n       rankdir = \"LR\"]\n\nnode [fontname = \"Helvetica\",\n      fontsize = \"10\",\n      shape = \"circle\",\n      fixedsize = \"true\",\n      width = \"0.5\",\n      style = \"filled\",\n      fillcolor = \"aliceblue\",\n      color = \"gray70\",\n      fontcolor = \"gray50\"]\n\nedge [fontname = \"Helvetica\",\n     fontsize = \"8\",\n     len = \"1.5\",\n     color = \"gray80\",\n     arrowsize = \"0.5\"]\n\n  \"1\" [label = \"xaringan\\n .Rmd\", shape = \"circle\", color = \"#3C3C3C\", fontname = \"Lato\", fontcolor = \"black\", width = \"0.75\", fillcolor = \"#61acf0\"] \n  \"2\" [label = \"knitr\", shape = \"square\", color = \"#3C3C3C\", fontname = \"Lato\", fontcolor = \"black\", width = \"0.5\", fillcolor = \"#f0a561\"] \n  \"3\" [label = \".md\", shape = \"circle\", color = \"#3C3C3C\", fontname = \"Lato\", fontcolor = \"black\", width = \"0.5\", fillcolor = \"#cbd20a\"] \n  \"4\" [label = \"remark.js via\\n xaringan::moon_reader\", shape = \"rectangle\", color = \"#3C3C3C\", fontname = \"Lato\", fontcolor = \"black\", width = \"2\", fillcolor = \"#f0a561\"] \n  \"5\" [label = \"html\", shape = \"circle\", color = \"#3C3C3C\", fontname = \"Lato\", fontcolor = \"black\", width = \"0.5\", fillcolor = \"#e74a2f\"] \n\"1\"->\"2\" [color = \"#3C3C3C\"] \n\"2\"->\"3\" [color = \"#3C3C3C\"] \n\"3\"->\"4\" [color = \"#3C3C3C\"] \n\"4\"->\"5\" [color = \"#3C3C3C\"] \n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-70f7049a64b7f27799b0" style="width:75%;height:50%;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-70f7049a64b7f27799b0">{"x":{"diagram":"digraph {\n\ngraph [layout = \"dot\",\n       outputorder = \"edgesfirst\",\n       bgcolor = \"white\",\n       rankdir = \"LR\"]\n\nnode [fontname = \"Helvetica\",\n      fontsize = \"10\",\n      shape = \"circle\",\n      fixedsize = \"true\",\n      width = \"0.5\",\n      style = \"filled\",\n      fillcolor = \"aliceblue\",\n      color = \"gray70\",\n      fontcolor = \"gray50\"]\n\nedge [fontname = \"Helvetica\",\n     fontsize = \"8\",\n     len = \"1.5\",\n     color = \"gray80\",\n     arrowsize = \"0.5\"]\n\n  \"1\" [label = \"xaringan\\n .Rmd\", shape = \"circle\", color = \"#3C3C3C\", fontname = \"Lato\", fontcolor = \"black\", width = \"0.75\", fillcolor = \"#61acf0\"] \n  \"2\" [label = \"knitr\", shape = \"square\", color = \"#3C3C3C\", fontname = \"Lato\", fontcolor = \"black\", width = \"0.5\", fillcolor = \"#f0a561\"] \n  \"3\" [label = \".md\", shape = \"circle\", color = \"#3C3C3C\", fontname = \"Lato\", fontcolor = \"black\", width = \"0.5\", fillcolor = \"#cbd20a\"] \n  \"4\" [label = \"remark.js via\\n xaringan::moon_reader\", shape = \"rectangle\", color = \"#3C3C3C\", fontname = \"Lato\", fontcolor = \"black\", width = \"2\", fillcolor = \"#f0a561\"] \n  \"5\" [label = \"html\", shape = \"circle\", color = \"#3C3C3C\", fontname = \"Lato\", fontcolor = \"black\", width = \"0.5\", fillcolor = \"#e74a2f\"] \n\"1\"->\"2\" [color = \"#3C3C3C\"] \n\"2\"->\"3\" [color = \"#3C3C3C\"] \n\"3\"->\"4\" [color = \"#3C3C3C\"] \n\"4\"->\"5\" [color = \"#3C3C3C\"] \n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 
 
 
@@ -414,43 +450,6 @@ You can [name individual slides](https://github.com/gnab/remark/wiki/Markdown#na
 ???
 
 For example, for these slide decks today, I named all the Your Turn slides so that they would be easily linkable.
-
----
-name: keyboard-demo
-class: center, inverse, middle
-
-# .fancy[Keyboard shortcuts]
-
-Press `h` or `?` to see the `remark.js` [keyboard shortcuts](https://bookdown.org/yihui/rmarkdown/xaringan-key.html). 
-
---
-
-A useful workflow for presenting; if you have two screens, turn off display mirroring then press `c` to clone:
-
-.pull-left[
-
-# <svg aria-hidden="true" role="img" viewBox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:white;overflow:visible;position:relative;"><path d="M528 0H48C21.5 0 0 21.5 0 48v320c0 26.5 21.5 48 48 48h192l-16 48h-72c-13.3 0-24 10.7-24 24s10.7 24 24 24h272c13.3 0 24-10.7 24-24s-10.7-24-24-24h-72l-16-48h192c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zm-16 352H64V64h448v288z"/></svg>
-
-On the presentation screen:
-
-Move cloned window to this screen &lt;br&gt;
-Then press `f` for full-screen mode
-
-]
-
-.pull-right[
-
-# <svg aria-hidden="true" role="img" viewBox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:white;overflow:visible;position:relative;"><path d="M624 416H381.54c-.74 19.81-14.71 32-32.74 32H288c-18.69 0-33.02-17.47-32.77-32H16c-8.8 0-16 7.2-16 16v16c0 35.2 28.8 64 64 64h512c35.2 0 64-28.8 64-64v-16c0-8.8-7.2-16-16-16zM576 48c0-26.4-21.6-48-48-48H112C85.6 0 64 21.6 64 48v336h512V48zm-64 272H128V64h384v256z"/></svg>
-
-On your laptop screen:
-
-Press `p` for presenter mode on laptop &lt;br&gt;
-Wish you had used `???` to add [presenter notes](https://bookdown.org/yihui/rmarkdown/xaringan-format.html#xaringan-notes)
-]
-
-???
-
-Don't forget to add presenter notes- when you are in presenter mode you see them but your audience does not! You use three question marks at the bottom of your slide to separate out your notes.
 
 ---
 name: sfah
@@ -1162,8 +1161,8 @@ head(tx_names) %&gt;%
   datatable()
 ```
 
-<div id="htmlwidget-e1b63fdbfc00a0c38f17" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-e1b63fdbfc00a0c38f17">{"x":{"filter":"none","data":[["1","2","3","4","5","6"],[1892,1894,1896,1899,1900,1903],["F","F","F","F","F","F"],["Dallas","Dallas","Dallas","Dallas","Dallas","Dallas"],[9,6,7,6,9,9],[4.002e-05,2.543e-05,2.778e-05,2.424e-05,2.832e-05,3.235e-05]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>year<\/th>\n      <th>sex<\/th>\n      <th>name<\/th>\n      <th>n<\/th>\n      <th>prop<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":[1,4,5]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-54d69082f04659f5eb85" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-54d69082f04659f5eb85">{"x":{"filter":"none","data":[["1","2","3","4","5","6"],[1892,1894,1896,1899,1900,1903],["F","F","F","F","F","F"],["Dallas","Dallas","Dallas","Dallas","Dallas","Dallas"],[9,6,7,6,9,9],[4.002e-05,2.543e-05,2.778e-05,2.424e-05,2.832e-05,3.235e-05]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>year<\/th>\n      <th>sex<\/th>\n      <th>name<\/th>\n      <th>n<\/th>\n      <th>prop<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":[1,4,5]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
 
 ]
 
@@ -1182,12 +1181,12 @@ head(tx_names) %&gt;%
   gt()
 ```
 
-<div id="lrxipamkzm" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="esgulagjqu" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#lrxipamkzm .gt_table {
+#esgulagjqu .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -1212,7 +1211,7 @@ head(tx_names) %&gt;%
   border-left-color: #D3D3D3;
 }
 
-#lrxipamkzm .gt_heading {
+#esgulagjqu .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1224,7 +1223,7 @@ head(tx_names) %&gt;%
   border-right-color: #D3D3D3;
 }
 
-#lrxipamkzm .gt_title {
+#esgulagjqu .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1234,7 +1233,7 @@ head(tx_names) %&gt;%
   border-bottom-width: 0;
 }
 
-#lrxipamkzm .gt_subtitle {
+#esgulagjqu .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1244,13 +1243,13 @@ head(tx_names) %&gt;%
   border-top-width: 0;
 }
 
-#lrxipamkzm .gt_bottom_border {
+#esgulagjqu .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#lrxipamkzm .gt_col_headings {
+#esgulagjqu .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1265,7 +1264,7 @@ head(tx_names) %&gt;%
   border-right-color: #D3D3D3;
 }
 
-#lrxipamkzm .gt_col_heading {
+#esgulagjqu .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1285,7 +1284,7 @@ head(tx_names) %&gt;%
   overflow-x: hidden;
 }
 
-#lrxipamkzm .gt_column_spanner_outer {
+#esgulagjqu .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1297,15 +1296,15 @@ head(tx_names) %&gt;%
   padding-right: 4px;
 }
 
-#lrxipamkzm .gt_column_spanner_outer:first-child {
+#esgulagjqu .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#lrxipamkzm .gt_column_spanner_outer:last-child {
+#esgulagjqu .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#lrxipamkzm .gt_column_spanner {
+#esgulagjqu .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1317,7 +1316,7 @@ head(tx_names) %&gt;%
   width: 100%;
 }
 
-#lrxipamkzm .gt_group_heading {
+#esgulagjqu .gt_group_heading {
   padding: 8px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1339,7 +1338,7 @@ head(tx_names) %&gt;%
   vertical-align: middle;
 }
 
-#lrxipamkzm .gt_empty_group_heading {
+#esgulagjqu .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1354,15 +1353,15 @@ head(tx_names) %&gt;%
   vertical-align: middle;
 }
 
-#lrxipamkzm .gt_from_md > :first-child {
+#esgulagjqu .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#lrxipamkzm .gt_from_md > :last-child {
+#esgulagjqu .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#lrxipamkzm .gt_row {
+#esgulagjqu .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1381,7 +1380,7 @@ head(tx_names) %&gt;%
   overflow-x: hidden;
 }
 
-#lrxipamkzm .gt_stub {
+#esgulagjqu .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1393,7 +1392,7 @@ head(tx_names) %&gt;%
   padding-left: 12px;
 }
 
-#lrxipamkzm .gt_summary_row {
+#esgulagjqu .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1403,7 +1402,7 @@ head(tx_names) %&gt;%
   padding-right: 5px;
 }
 
-#lrxipamkzm .gt_first_summary_row {
+#esgulagjqu .gt_first_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1413,7 +1412,7 @@ head(tx_names) %&gt;%
   border-top-color: #D3D3D3;
 }
 
-#lrxipamkzm .gt_grand_summary_row {
+#esgulagjqu .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1423,7 +1422,7 @@ head(tx_names) %&gt;%
   padding-right: 5px;
 }
 
-#lrxipamkzm .gt_first_grand_summary_row {
+#esgulagjqu .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1433,11 +1432,11 @@ head(tx_names) %&gt;%
   border-top-color: #D3D3D3;
 }
 
-#lrxipamkzm .gt_striped {
+#esgulagjqu .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#lrxipamkzm .gt_table_body {
+#esgulagjqu .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1446,7 +1445,7 @@ head(tx_names) %&gt;%
   border-bottom-color: #D3D3D3;
 }
 
-#lrxipamkzm .gt_footnotes {
+#esgulagjqu .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1460,13 +1459,13 @@ head(tx_names) %&gt;%
   border-right-color: #D3D3D3;
 }
 
-#lrxipamkzm .gt_footnote {
+#esgulagjqu .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding: 4px;
 }
 
-#lrxipamkzm .gt_sourcenotes {
+#esgulagjqu .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1480,41 +1479,41 @@ head(tx_names) %&gt;%
   border-right-color: #D3D3D3;
 }
 
-#lrxipamkzm .gt_sourcenote {
+#esgulagjqu .gt_sourcenote {
   font-size: 90%;
   padding: 4px;
 }
 
-#lrxipamkzm .gt_left {
+#esgulagjqu .gt_left {
   text-align: left;
 }
 
-#lrxipamkzm .gt_center {
+#esgulagjqu .gt_center {
   text-align: center;
 }
 
-#lrxipamkzm .gt_right {
+#esgulagjqu .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#lrxipamkzm .gt_font_normal {
+#esgulagjqu .gt_font_normal {
   font-weight: normal;
 }
 
-#lrxipamkzm .gt_font_bold {
+#esgulagjqu .gt_font_bold {
   font-weight: bold;
 }
 
-#lrxipamkzm .gt_font_italic {
+#esgulagjqu .gt_font_italic {
   font-style: italic;
 }
 
-#lrxipamkzm .gt_super {
+#esgulagjqu .gt_super {
   font-size: 65%;
 }
 
-#lrxipamkzm .gt_footnote_marks {
+#esgulagjqu .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 65%;
@@ -1584,8 +1583,8 @@ library(leaflet)
 leaflet() %&gt;% addTiles() %&gt;% setView(lat = 30.2621, lng = -97.7382, zoom = 17)
 ```
 
-<div id="htmlwidget-677a821749f3eb717ab7" style="width:100%;height:432px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-677a821749f3eb717ab7">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]}],"setView":[[30.2621,-97.7382],17,[]]},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-5d61e1fbeeb428eb9094" style="width:100%;height:432px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-5d61e1fbeeb428eb9094">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]}],"setView":[[30.2621,-97.7382],17,[]]},"evals":[],"jsHooks":[]}</script>
 ]
 
 

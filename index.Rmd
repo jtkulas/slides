@@ -70,6 +70,42 @@ class: inverse, middle, right
 ]
 
 
+---
+name: keyboard-demo
+class: center, middle, inverse
+
+# .fancy[Keyboard shortcuts]
+
+Press `h` or `?` to see the `remark.js` [keyboard shortcuts](https://bookdown.org/yihui/rmarkdown/xaringan-key.html). 
+
+--
+
+A useful workflow for presenting; if you have two screens, turn off display mirroring then press `c` to clone:
+
+.pull-left[
+
+# `r fa(name = "desktop", fill = "white")`
+
+On the presentation screen:
+
+Move cloned window to this screen <br>
+Then press `f` for full-screen mode
+
+]
+
+.pull-right[
+
+# `r fa(name = "laptop", fill = "white")`
+
+On your laptop screen:
+
+Press `p` for presenter mode on laptop <br>
+Wish you had used `???` to add [presenter notes](https://bookdown.org/yihui/rmarkdown/xaringan-format.html#xaringan-notes)
+]
+
+???
+
+Don't forget to add presenter notes- when you are in presenter mode you see them but your audience does not! You use three question marks at the bottom of your slide to separate out your notes.
 
 ---
 name: setup
@@ -434,43 +470,6 @@ You can [name individual slides](https://github.com/gnab/remark/wiki/Markdown#na
 ???
 
 For example, for these slide decks today, I named all the Your Turn slides so that they would be easily linkable.
-
----
-name: keyboard-demo
-class: center, inverse, middle
-
-# .fancy[Keyboard shortcuts]
-
-Press `h` or `?` to see the `remark.js` [keyboard shortcuts](https://bookdown.org/yihui/rmarkdown/xaringan-key.html). 
-
---
-
-A useful workflow for presenting; if you have two screens, turn off display mirroring then press `c` to clone:
-
-.pull-left[
-
-# `r fa(name = "desktop", fill = "white")`
-
-On the presentation screen:
-
-Move cloned window to this screen <br>
-Then press `f` for full-screen mode
-
-]
-
-.pull-right[
-
-# `r fa(name = "laptop", fill = "white")`
-
-On your laptop screen:
-
-Press `p` for presenter mode on laptop <br>
-Wish you had used `???` to add [presenter notes](https://bookdown.org/yihui/rmarkdown/xaringan-format.html#xaringan-notes)
-]
-
-???
-
-Don't forget to add presenter notes- when you are in presenter mode you see them but your audience does not! You use three question marks at the bottom of your slide to separate out your notes.
 
 ---
 name: sfah
