@@ -37,7 +37,7 @@ layout: true
 
 ---
 name: xaringan-title
-class: left, middle
+class: left, middle, inverse
 background-image: url(img/cover.jpg)
 background-size: cover 
 
@@ -52,20 +52,20 @@ John Kulas | erg | `r Sys.Date()`
 <!-- this ends up being the title slide since seal = FALSE-->
 ---
 
-class: inverse, middle, right
+class: middle, right
 
-.left-column[
+.pull-left[
 <img class="circle" src="img/kulas.jpg" width="150px"/>
 
 # Find us at...
 
 [`r fa(name = "twitter")` @jtkulas](http://twitter.com/jtkulas)  
 [`r fa(name = "github")` @jtkulas](http://github.com/jtkulas)  
-[`r fa(name = "link")` alison.rbind.io](https://alison.rbind.io)  
-[`r fa(name = "paper-plane")` alison@rstudio.com](mailto:alison@rstudio.com)
+[`r fa(name = "link")` jtkulas.rbind.io](https://jtkulas.rbind.io)  
+[`r fa(name = "paper-plane")` jtkulas@ergweb.com](mailto:kulasj@ergweb.com)
 ]
 
-.right-column[
+.pull-right[
 <img src="img/tutor.jpg" height="500px"/>
 ]
 
@@ -76,7 +76,7 @@ class: center, middle, inverse
 
 # .fancy[Keyboard shortcuts]
 
-Press `h` or `?` to see the `remark.js` [keyboard shortcuts](https://bookdown.org/yihui/rmarkdown/xaringan-key.html). 
+Press `h` or `?` to see the [keyboard shortcuts](https://bookdown.org/yihui/rmarkdown/xaringan-key.html). 
 
 --
 
@@ -99,8 +99,7 @@ Then press `f` for full-screen mode
 
 On your laptop screen:
 
-Press `p` for presenter mode on laptop <br>
-Wish you had used `???` to add [presenter notes](https://bookdown.org/yihui/rmarkdown/xaringan-format.html#xaringan-notes)
+Press `p` for presenter mode on laptop
 ]
 
 ???
