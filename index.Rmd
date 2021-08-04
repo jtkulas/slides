@@ -41,13 +41,13 @@ class: left, middle, inverse
 background-image: url(img/cover.jpg)
 background-size: cover 
 
-# Feedback Report <br>Slides Tutorial
+# .white[Feedback Report <br>Slides Tutorial]
 
 <img src="erg5.png" alt="Sharingan" width="180" />
 
-### .large[.fancy[Using erg <br>feedback slides]]
+### .white[.large[.fancy[Using erg <br>feedback slides]]]
 
-John-o Kulas | erg | `r Sys.Date()`
+.white[John-o Kulas | erg | `r Sys.Date()`]
 
 <!-- this ends up being the title slide since seal = FALSE-->
 ---
@@ -75,7 +75,7 @@ class: center, middle, inverse
 
 # .fancy[Keyboard shortcuts]
 
-Press `h` or `?` to see the [keyboard shortcuts](https://bookdown.org/yihui/rmarkdown/xaringan-key.html). 
+Press `h` or `?` to see the keyboard shortcuts to aid your slide presentation. 
 
 --
 
