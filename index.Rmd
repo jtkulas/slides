@@ -61,8 +61,8 @@ class: left, middle, inverse
 
 [`r fa(name = "twitter")` @jtkulas](http://twitter.com/jtkulas)  
 [`r fa(name = "github")` jtkulas](http://github.com/jtkulas)  
-[`r fa(name = "link")` jtkulas.rbind.io](https://jtkulas.rbind.io)  
-[`r fa(name = "paper-plane")` jtkulas@ergweb.com](mailto:kulasj@ergweb.com)
+[`r fa(name = "link")` erg](https://ergweb.netlify.com)  
+[`r fa(name = "paper-plane")` jtkulas@ergweb.com](mailto:jtkulas@ergweb.com)
 ]  
 
 .pull-right[
