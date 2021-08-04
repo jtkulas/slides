@@ -1,8 +1,8 @@
 ---
-title: "Making Slides with R Markdown"
-subtitle: "Meet xaringan"
-author: "Alison Hill"
-date: "2019/01/15 (updated: `r Sys.Date()`)"
+title: "erg Slides Tutorial"
+subtitle: "Using erg Feedback Slides"
+author: "John-o Kulas"
+date: "last updated: `r Sys.Date()`"
 output:
   xaringan::moon_reader:
     css: ["default", "css/sfah.css", "css/fonts.css"]
@@ -45,30 +45,29 @@ background-size: cover
 
 <img src="erg5.png" alt="Sharingan" width="180" />
 
-### .fancy[Using erg <br>feedback slides]
+### .large[.fancy[Using erg <br>feedback slides]]
 
-John Kulas | erg | `r Sys.Date()`
+John-o Kulas | erg | `r Sys.Date()`
 
 <!-- this ends up being the title slide since seal = FALSE-->
 ---
 
-class: middle, right
+class: left, middle, inverse
+
+# .salt[.fancy[Find us at...]]
 
 .pull-left[
-<img class="circle" src="img/kulas.jpg" width="150px"/>
-
-# Find us at...
+<img class="circle" src="img/kulas.jpg" width="200px"/>
 
 [`r fa(name = "twitter")` @jtkulas](http://twitter.com/jtkulas)  
-[`r fa(name = "github")` @jtkulas](http://github.com/jtkulas)  
+[`r fa(name = "github")` jtkulas](http://github.com/jtkulas)  
 [`r fa(name = "link")` jtkulas.rbind.io](https://jtkulas.rbind.io)  
 [`r fa(name = "paper-plane")` jtkulas@ergweb.com](mailto:kulasj@ergweb.com)
-]
+]  
 
 .pull-right[
-<img src="img/tutor.jpg" height="500px"/>
+<img src="img/telescope.jpg" />
 ]
-
 
 ---
 name: keyboard-demo
@@ -104,8 +103,7 @@ Press `p` for presenter mode on laptop
 
 ???
 
-Don't forget to add presenter notes- when you are in presenter mode you see them but your audience does not! You use three question marks at the bottom of your slide to separate out your notes.
-
+Don't forget to add presenter notes- when you are in presenter mode you see them but your audience does not! 
 ---
 name: setup
 class: middle, inverse
