@@ -53,9 +53,9 @@ background-size: cover
 <!-- this ends up being the title slide since seal = FALSE-->
 ---
 
-class: left, middle, inverse
+class: left, top, inverse
 
-# .salt[.fancy[Find us at...]]
+# .center[.salt[.fancy[Find us at...]]]
 
 .pull-left[
 <img class="circle" src="img/kulas.jpg" width="200px"/>
@@ -104,7 +104,8 @@ Press `p` for presenter mode on laptop
 
 ???
 
-Don't forget to add presenter notes- when you are in presenter mode you see them but your audience does not! 
+When you are in presenter mode, you see your notes but your audience does not! 
+
 ---
 name: setup
 class: middle, inverse
