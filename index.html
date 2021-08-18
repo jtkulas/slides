@@ -6,6 +6,10 @@
     <meta name="author" content="John-o Kulas" />
     <script src="libs/header-attrs/header-attrs.js"></script>
     <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <script src="libs/fabric/fabric.min.js"></script>
+    <link href="libs/xaringanExtra-scribble/scribble.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-scribble/scribble.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', function() { window.xeScribble = new Scribble({"pen_color":["#FF0000"],"pen_size":3,"eraser_size":30,"palette":[]}) })</script>
     <script src="libs/htmlwidgets/htmlwidgets.js"></script>
     <script src="libs/viz/viz.js"></script>
     <link href="libs/DiagrammeR-styles/styles.css" rel="stylesheet" />
@@ -53,7 +57,7 @@ background-size: cover
 
 ### .white[.large[.fancy[Using e<svg aria-hidden="true" role="img" viewBox="0 0 581 512" style="height:1em;width:1.13em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M581 226.6C581 119.1 450.9 32 290.5 32S0 119.1 0 226.6C0 322.4 103.3 402 239.4 418.1V480h99.1v-61.5c24.3-2.7 47.6-7.4 69.4-13.9L448 480h112l-67.4-113.7c54.5-35.4 88.4-84.9 88.4-139.7zm-466.8 14.5c0-73.5 98.9-133 220.8-133s211.9 40.7 211.9 133c0 50.1-26.5 85-70.3 106.4-2.4-1.6-4.7-2.9-6.4-3.7-10.2-5.2-27.8-10.5-27.8-10.5s86.6-6.4 86.6-92.7-90.6-87.9-90.6-87.9h-199V361c-74.1-21.5-125.2-67.1-125.2-119.9zm225.1 38.3v-55.6c57.8 0 87.8-6.8 87.8 27.3 0 36.5-38.2 28.3-87.8 28.3zm-.9 72.5H365c10.8 0 18.9 11.7 24 19.2-16.1 1.9-33 2.8-50.6 2.9v-22.1z"/></svg>g &lt;br&gt;feedback slides]]]
 
-.white[John-o Kulas | e<svg aria-hidden="true" role="img" viewBox="0 0 581 512" style="height:1em;width:1.13em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M581 226.6C581 119.1 450.9 32 290.5 32S0 119.1 0 226.6C0 322.4 103.3 402 239.4 418.1V480h99.1v-61.5c24.3-2.7 47.6-7.4 69.4-13.9L448 480h112l-67.4-113.7c54.5-35.4 88.4-84.9 88.4-139.7zm-466.8 14.5c0-73.5 98.9-133 220.8-133s211.9 40.7 211.9 133c0 50.1-26.5 85-70.3 106.4-2.4-1.6-4.7-2.9-6.4-3.7-10.2-5.2-27.8-10.5-27.8-10.5s86.6-6.4 86.6-92.7-90.6-87.9-90.6-87.9h-199V361c-74.1-21.5-125.2-67.1-125.2-119.9zm225.1 38.3v-55.6c57.8 0 87.8-6.8 87.8 27.3 0 36.5-38.2 28.3-87.8 28.3zm-.9 72.5H365c10.8 0 18.9 11.7 24 19.2-16.1 1.9-33 2.8-50.6 2.9v-22.1z"/></svg>g | 2021-08-04]
+.white[John-o Kulas | e<svg aria-hidden="true" role="img" viewBox="0 0 581 512" style="height:1em;width:1.13em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M581 226.6C581 119.1 450.9 32 290.5 32S0 119.1 0 226.6C0 322.4 103.3 402 239.4 418.1V480h99.1v-61.5c24.3-2.7 47.6-7.4 69.4-13.9L448 480h112l-67.4-113.7c54.5-35.4 88.4-84.9 88.4-139.7zm-466.8 14.5c0-73.5 98.9-133 220.8-133s211.9 40.7 211.9 133c0 50.1-26.5 85-70.3 106.4-2.4-1.6-4.7-2.9-6.4-3.7-10.2-5.2-27.8-10.5-27.8-10.5s86.6-6.4 86.6-92.7-90.6-87.9-90.6-87.9h-199V361c-74.1-21.5-125.2-67.1-125.2-119.9zm225.1 38.3v-55.6c57.8 0 87.8-6.8 87.8 27.3 0 36.5-38.2 28.3-87.8 28.3zm-.9 72.5H365c10.8 0 18.9 11.7 24 19.2-16.1 1.9-33 2.8-50.6 2.9v-22.1z"/></svg>g | 2021-08-17]
 
 &lt;!-- this ends up being the title slide since seal = FALSE--&gt;
 ---
@@ -275,8 +279,8 @@ With R Markdown, you are used to this:
 
 With **xaringan** (no `pandoc`!):
 
-<div id="htmlwidget-98bd00b375848db0d678" style="width:75%;height:50%;" class="grViz html-widget"></div>
-<script type="application/json" data-for="htmlwidget-98bd00b375848db0d678">{"x":{"diagram":"digraph {\n\ngraph [layout = \"dot\",\n       outputorder = \"edgesfirst\",\n       bgcolor = \"white\",\n       rankdir = \"LR\"]\n\nnode [fontname = \"Helvetica\",\n      fontsize = \"10\",\n      shape = \"circle\",\n      fixedsize = \"true\",\n      width = \"0.5\",\n      style = \"filled\",\n      fillcolor = \"aliceblue\",\n      color = \"gray70\",\n      fontcolor = \"gray50\"]\n\nedge [fontname = \"Helvetica\",\n     fontsize = \"8\",\n     len = \"1.5\",\n     color = \"gray80\",\n     arrowsize = \"0.5\"]\n\n  \"1\" [label = \"xaringan\\n .Rmd\", shape = \"circle\", color = \"#3C3C3C\", fontname = \"Lato\", fontcolor = \"black\", width = \"0.75\", fillcolor = \"#61acf0\"] \n  \"2\" [label = \"knitr\", shape = \"square\", color = \"#3C3C3C\", fontname = \"Lato\", fontcolor = \"black\", width = \"0.5\", fillcolor = \"#f0a561\"] \n  \"3\" [label = \".md\", shape = \"circle\", color = \"#3C3C3C\", fontname = \"Lato\", fontcolor = \"black\", width = \"0.5\", fillcolor = \"#cbd20a\"] \n  \"4\" [label = \"remark.js via\\n xaringan::moon_reader\", shape = \"rectangle\", color = \"#3C3C3C\", fontname = \"Lato\", fontcolor = \"black\", width = \"2\", fillcolor = \"#f0a561\"] \n  \"5\" [label = \"html\", shape = \"circle\", color = \"#3C3C3C\", fontname = \"Lato\", fontcolor = \"black\", width = \"0.5\", fillcolor = \"#e74a2f\"] \n\"1\"->\"2\" [color = \"#3C3C3C\"] \n\"2\"->\"3\" [color = \"#3C3C3C\"] \n\"3\"->\"4\" [color = \"#3C3C3C\"] \n\"4\"->\"5\" [color = \"#3C3C3C\"] \n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-532a393a1b15c480f209" style="width:75%;height:50%;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-532a393a1b15c480f209">{"x":{"diagram":"digraph {\n\ngraph [layout = \"dot\",\n       outputorder = \"edgesfirst\",\n       bgcolor = \"white\",\n       rankdir = \"LR\"]\n\nnode [fontname = \"Helvetica\",\n      fontsize = \"10\",\n      shape = \"circle\",\n      fixedsize = \"true\",\n      width = \"0.5\",\n      style = \"filled\",\n      fillcolor = \"aliceblue\",\n      color = \"gray70\",\n      fontcolor = \"gray50\"]\n\nedge [fontname = \"Helvetica\",\n     fontsize = \"8\",\n     len = \"1.5\",\n     color = \"gray80\",\n     arrowsize = \"0.5\"]\n\n  \"1\" [label = \"xaringan\\n .Rmd\", shape = \"circle\", color = \"#3C3C3C\", fontname = \"Lato\", fontcolor = \"black\", width = \"0.75\", fillcolor = \"#61acf0\"] \n  \"2\" [label = \"knitr\", shape = \"square\", color = \"#3C3C3C\", fontname = \"Lato\", fontcolor = \"black\", width = \"0.5\", fillcolor = \"#f0a561\"] \n  \"3\" [label = \".md\", shape = \"circle\", color = \"#3C3C3C\", fontname = \"Lato\", fontcolor = \"black\", width = \"0.5\", fillcolor = \"#cbd20a\"] \n  \"4\" [label = \"remark.js via\\n xaringan::moon_reader\", shape = \"rectangle\", color = \"#3C3C3C\", fontname = \"Lato\", fontcolor = \"black\", width = \"2\", fillcolor = \"#f0a561\"] \n  \"5\" [label = \"html\", shape = \"circle\", color = \"#3C3C3C\", fontname = \"Lato\", fontcolor = \"black\", width = \"0.5\", fillcolor = \"#e74a2f\"] \n\"1\"->\"2\" [color = \"#3C3C3C\"] \n\"2\"->\"3\" [color = \"#3C3C3C\"] \n\"3\"->\"4\" [color = \"#3C3C3C\"] \n\"4\"->\"5\" [color = \"#3C3C3C\"] \n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 
 
 
@@ -375,7 +379,7 @@ Save this!
 
 ---
 
-# Moon reader 👨‍🚀
+# Moon reader 👩‍🚀
 
 
 
@@ -995,11 +999,11 @@ glimpse(tx_names)
 ```
 ## Rows: 171
 ## Columns: 5
-*## $ year &lt;dbl&gt; 1892, 1894, 1896, 1899, 1900, 1903, 1904, 1905, 1906, 1907, 1908, 1909, 1910, 1911, ~
-*## $ sex  &lt;chr&gt; "F", "F", "F", "F", "F", "F", "F", "F", "F", "F", "F", "F", "F", "F", "F", "F", "F",~
-## $ name &lt;chr&gt; "Dallas", "Dallas", "Dallas", "Dallas", "Dallas", "Dallas", "Dallas", "Dallas", "Dal~
-## $ n    &lt;int&gt; 9, 6, 7, 6, 9, 9, 9, 12, 8, 7, 14, 11, 20, 19, 24, 16, 28, 30, 5, 38, 26, 5, 35, 10,~
-## $ prop &lt;dbl&gt; 4.002e-05, 2.543e-05, 2.778e-05, 2.424e-05, 2.832e-05, 3.235e-05, 3.078e-05, 3.873e-~
+*## $ year &lt;dbl&gt; 1892, 1894, 1896, 1899, 1900, 1903, 1904, 1905, 1906, 1~
+*## $ sex  &lt;chr&gt; "F", "F", "F", "F", "F", "F", "F", "F", "F", "F", "F", ~
+## $ name &lt;chr&gt; "Dallas", "Dallas", "Dallas", "Dallas", "Dallas", "Dall~
+## $ n    &lt;int&gt; 9, 6, 7, 6, 9, 9, 9, 12, 8, 7, 14, 11, 20, 19, 24, 16, ~
+## $ prop &lt;dbl&gt; 4.002e-05, 2.543e-05, 2.778e-05, 2.424e-05, 2.832e-05, ~
 ```
 ]
 
@@ -1159,8 +1163,8 @@ head(tx_names) %&gt;%
   datatable()
 ```
 
-<div id="htmlwidget-c85d066fbdcb58f91745" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-c85d066fbdcb58f91745">{"x":{"filter":"none","data":[["1","2","3","4","5","6"],[1892,1894,1896,1899,1900,1903],["F","F","F","F","F","F"],["Dallas","Dallas","Dallas","Dallas","Dallas","Dallas"],[9,6,7,6,9,9],[4.002e-05,2.543e-05,2.778e-05,2.424e-05,2.832e-05,3.235e-05]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>year<\/th>\n      <th>sex<\/th>\n      <th>name<\/th>\n      <th>n<\/th>\n      <th>prop<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":[1,4,5]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-843e2d7ca8f1ddec9f8c" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-843e2d7ca8f1ddec9f8c">{"x":{"filter":"none","data":[["1","2","3","4","5","6"],[1892,1894,1896,1899,1900,1903],["F","F","F","F","F","F"],["Dallas","Dallas","Dallas","Dallas","Dallas","Dallas"],[9,6,7,6,9,9],[4.002e-05,2.543e-05,2.778e-05,2.424e-05,2.832e-05,3.235e-05]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>year<\/th>\n      <th>sex<\/th>\n      <th>name<\/th>\n      <th>n<\/th>\n      <th>prop<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":[1,4,5]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
 
 ]
 
@@ -1179,12 +1183,12 @@ head(tx_names) %&gt;%
   gt()
 ```
 
-<div id="tvenqwyigp" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="nrzjesstzn" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#tvenqwyigp .gt_table {
+#nrzjesstzn .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -1209,7 +1213,7 @@ head(tx_names) %&gt;%
   border-left-color: #D3D3D3;
 }
 
-#tvenqwyigp .gt_heading {
+#nrzjesstzn .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1221,7 +1225,7 @@ head(tx_names) %&gt;%
   border-right-color: #D3D3D3;
 }
 
-#tvenqwyigp .gt_title {
+#nrzjesstzn .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1231,7 +1235,7 @@ head(tx_names) %&gt;%
   border-bottom-width: 0;
 }
 
-#tvenqwyigp .gt_subtitle {
+#nrzjesstzn .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1241,13 +1245,13 @@ head(tx_names) %&gt;%
   border-top-width: 0;
 }
 
-#tvenqwyigp .gt_bottom_border {
+#nrzjesstzn .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#tvenqwyigp .gt_col_headings {
+#nrzjesstzn .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1262,7 +1266,7 @@ head(tx_names) %&gt;%
   border-right-color: #D3D3D3;
 }
 
-#tvenqwyigp .gt_col_heading {
+#nrzjesstzn .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1282,7 +1286,7 @@ head(tx_names) %&gt;%
   overflow-x: hidden;
 }
 
-#tvenqwyigp .gt_column_spanner_outer {
+#nrzjesstzn .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1294,15 +1298,15 @@ head(tx_names) %&gt;%
   padding-right: 4px;
 }
 
-#tvenqwyigp .gt_column_spanner_outer:first-child {
+#nrzjesstzn .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#tvenqwyigp .gt_column_spanner_outer:last-child {
+#nrzjesstzn .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#tvenqwyigp .gt_column_spanner {
+#nrzjesstzn .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1314,7 +1318,7 @@ head(tx_names) %&gt;%
   width: 100%;
 }
 
-#tvenqwyigp .gt_group_heading {
+#nrzjesstzn .gt_group_heading {
   padding: 8px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1336,7 +1340,7 @@ head(tx_names) %&gt;%
   vertical-align: middle;
 }
 
-#tvenqwyigp .gt_empty_group_heading {
+#nrzjesstzn .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1351,15 +1355,15 @@ head(tx_names) %&gt;%
   vertical-align: middle;
 }
 
-#tvenqwyigp .gt_from_md > :first-child {
+#nrzjesstzn .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#tvenqwyigp .gt_from_md > :last-child {
+#nrzjesstzn .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#tvenqwyigp .gt_row {
+#nrzjesstzn .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1378,7 +1382,7 @@ head(tx_names) %&gt;%
   overflow-x: hidden;
 }
 
-#tvenqwyigp .gt_stub {
+#nrzjesstzn .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1390,7 +1394,7 @@ head(tx_names) %&gt;%
   padding-left: 12px;
 }
 
-#tvenqwyigp .gt_summary_row {
+#nrzjesstzn .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1400,7 +1404,7 @@ head(tx_names) %&gt;%
   padding-right: 5px;
 }
 
-#tvenqwyigp .gt_first_summary_row {
+#nrzjesstzn .gt_first_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1410,7 +1414,7 @@ head(tx_names) %&gt;%
   border-top-color: #D3D3D3;
 }
 
-#tvenqwyigp .gt_grand_summary_row {
+#nrzjesstzn .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1420,7 +1424,7 @@ head(tx_names) %&gt;%
   padding-right: 5px;
 }
 
-#tvenqwyigp .gt_first_grand_summary_row {
+#nrzjesstzn .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1430,11 +1434,11 @@ head(tx_names) %&gt;%
   border-top-color: #D3D3D3;
 }
 
-#tvenqwyigp .gt_striped {
+#nrzjesstzn .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#tvenqwyigp .gt_table_body {
+#nrzjesstzn .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1443,7 +1447,7 @@ head(tx_names) %&gt;%
   border-bottom-color: #D3D3D3;
 }
 
-#tvenqwyigp .gt_footnotes {
+#nrzjesstzn .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1457,13 +1461,13 @@ head(tx_names) %&gt;%
   border-right-color: #D3D3D3;
 }
 
-#tvenqwyigp .gt_footnote {
+#nrzjesstzn .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding: 4px;
 }
 
-#tvenqwyigp .gt_sourcenotes {
+#nrzjesstzn .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1477,41 +1481,41 @@ head(tx_names) %&gt;%
   border-right-color: #D3D3D3;
 }
 
-#tvenqwyigp .gt_sourcenote {
+#nrzjesstzn .gt_sourcenote {
   font-size: 90%;
   padding: 4px;
 }
 
-#tvenqwyigp .gt_left {
+#nrzjesstzn .gt_left {
   text-align: left;
 }
 
-#tvenqwyigp .gt_center {
+#nrzjesstzn .gt_center {
   text-align: center;
 }
 
-#tvenqwyigp .gt_right {
+#nrzjesstzn .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#tvenqwyigp .gt_font_normal {
+#nrzjesstzn .gt_font_normal {
   font-weight: normal;
 }
 
-#tvenqwyigp .gt_font_bold {
+#nrzjesstzn .gt_font_bold {
   font-weight: bold;
 }
 
-#tvenqwyigp .gt_font_italic {
+#nrzjesstzn .gt_font_italic {
   font-style: italic;
 }
 
-#tvenqwyigp .gt_super {
+#nrzjesstzn .gt_super {
   font-size: 65%;
 }
 
-#tvenqwyigp .gt_footnote_marks {
+#nrzjesstzn .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 65%;
@@ -1581,8 +1585,8 @@ library(leaflet)
 leaflet() %&gt;% addTiles() %&gt;% setView(lat = 30.2621, lng = -97.7382, zoom = 17)
 ```
 
-<div id="htmlwidget-958395cd7ab4f85ff607" style="width:100%;height:432px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-958395cd7ab4f85ff607">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]}],"setView":[[30.2621,-97.7382],17,[]]},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-728a35e1cdd9155f9ffd" style="width:100%;height:432px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-728a35e1cdd9155f9ffd">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]}],"setView":[[30.2621,-97.7382],17,[]]},"evals":[],"jsHooks":[]}</script>
 ]
 
 
@@ -1669,7 +1673,7 @@ class: inverse
 name: gg-theme
 
 .pull-left[
-# 🤭
+# 😮
 
 ````
 ```{r dev = 'svg', dev.args = list(bg = "transparent")}
@@ -2325,14 +2329,19 @@ names(xaringan:::list_css())
 ```
 
 ```
-##  [1] "chocolate-fonts"  "chocolate"        "default-fonts"    "default"          "duke-blue"       
-##  [6] "fc-fonts"         "fc"               "hygge-duke"       "hygge"            "ki-fonts"        
-## [11] "ki"               "kunoichi"         "lucy-fonts"       "lucy"             "metropolis-fonts"
-## [16] "metropolis"       "middlebury-fonts" "middlebury"       "nhsr-fonts"       "nhsr"            
-## [21] "ninjutsu"         "rladies-fonts"    "rladies"          "robot-fonts"      "robot"           
-## [26] "rutgers-fonts"    "rutgers"          "shinobi"          "tamu-fonts"       "tamu"            
-## [31] "uio-fonts"        "uio"              "uo-fonts"         "uo"               "uol-fonts"       
-## [36] "uol"              "useR-fonts"       "useR"
+##  [1] "chocolate-fonts"  "chocolate"        "default-fonts"   
+##  [4] "default"          "duke-blue"        "fc-fonts"        
+##  [7] "fc"               "hygge-duke"       "hygge"           
+## [10] "ki-fonts"         "ki"               "kunoichi"        
+## [13] "lucy-fonts"       "lucy"             "metropolis-fonts"
+## [16] "metropolis"       "middlebury-fonts" "middlebury"      
+## [19] "nhsr-fonts"       "nhsr"             "ninjutsu"        
+## [22] "rladies-fonts"    "rladies"          "robot-fonts"     
+## [25] "robot"            "rutgers-fonts"    "rutgers"         
+## [28] "shinobi"          "tamu-fonts"       "tamu"            
+## [31] "uio-fonts"        "uio"              "uo-fonts"        
+## [34] "uo"               "uol-fonts"        "uol"             
+## [37] "useR-fonts"       "useR"
 ```
 
 --

@@ -109,7 +109,13 @@ When you are in presenter mode, you see your notes but your audience does not!
 ---
 name: setup
 class: middle, inverse
+```{r xaringan-scribble, echo=FALSE}
 
+## https://pkg.garrickadenbuie.com/xaringanExtra/#/scribble
+
+xaringanExtra::use_scribble()
+
+```
 # Did you do the <br> .fat[.fancy[pre-work setup?]]
 
 .large[https://arm.rbind.io/prework/]
