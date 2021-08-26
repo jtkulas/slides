@@ -130,7 +130,7 @@ name: draw
 class: right, inverse, bottom
 
 .left-column[
-# Have you noticed the <br> .salt[.fancy["Pencil"?]] `r anicon::faa("pencil-alt", animate="wrench")`
+# Have you also noticed the <br> .fat[.fancy["Pencil"?]] `r anicon::faa("pencil-alt", animate="wrench")`
 ]
 
 .right-column[
@@ -141,21 +141,9 @@ class: right, inverse, bottom
 name: ninja
 class: middle, inverse
 
+## You can .salt[.fancy[edit]] your slides by activating the pencil:
 
-# We assume:
-
---
-
-### <i class="fab fa-markdown fa-lg fa-fw" style="float:left"/></i>&nbsp; you know Markdown 
-
---
-
-### <img src="https://raw.githubusercontent.com/rstudio/hex-stickers/master/PNG/rmarkdown.png" width="5%" style="float:left"/>&nbsp; you know R Markdown 
-
---
-
-### <i class="fab fa-html5 fa-lg fa-fw" style="float:left"></i>&nbsp; .saltinline[.fancy[you want awesome HTML5 slides]] 
-
+![](ezgif.com-gif-maker.gif)
 
 ---
 name: novice
