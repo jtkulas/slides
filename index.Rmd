@@ -130,7 +130,7 @@ name: draw
 class: right, inverse, bottom
 
 .left-column[
-# Have you noticed the <br> .salt[.fancy["Pencil"?]] `r fa("pencil-alt")`
+# Have you noticed the <br> .salt[.fancy["Pencil"?]] `r anicon::faa("pencil-alt", animate="wrench")`
 ]
 
 .right-column[
