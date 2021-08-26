@@ -27,8 +27,18 @@ library(tidyverse)
 library(babynames)
 library(fontawesome) # from github: https://github.com/rstudio/fontawesome
 library(DiagrammeR)
+```
+
+
+```{r xaringan-scribble, echo=FALSE}
+
+## https://pkg.garrickadenbuie.com/xaringanExtra/#/scribble
+
+xaringanExtra::use_scribble()          ## page load times much worse with this enabled
+## xaringanExtra::use_slide_tone()     ## use for visually impaired
 
 ```
+
 
 layout: true
   
@@ -109,29 +119,23 @@ When you are in presenter mode, you see your notes but your audience does not!
 ---
 name: setup
 class: middle, inverse
-```{r xaringan-scribble, echo=FALSE}
 
-## https://pkg.garrickadenbuie.com/xaringanExtra/#/scribble
-
-xaringanExtra::use_scribble()
-
-```
 # Did you do the <br> .fat[.fancy[pre-work setup?]]
 
 .large[https://arm.rbind.io/prework/]
 
 
 ---
-name: usecourse
-class: middle, inverse
+name: draw
+class: right, inverse, bottom
 
-# Did you download the <br> .salt[.fancy[workshop package?]]
+.left-column[
+# Have you noticed the <br> .salt[.fancy["Pencil"?]] `r fa("pencil-alt")`
+]
 
-
-```{r eval = FALSE, echo = TRUE}
-remotes::install_github("armcompanion")
-```
-
+.right-column[
+![](https://media.giphy.com/media/1xphakLtTYmJGhkWl4/giphy.gif?cid=ecf05e47i2e7iv2efglevlr6js37z83jde3oedst7jshfyvp&rid=giphy.gif&ct=g)
+]
 
 ---
 name: ninja
