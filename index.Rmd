@@ -64,16 +64,19 @@ background-size: cover
 
 class: left, top, inverse
 
-# .center[.salt[.fancy[Find us at...]]]
+# .salt[.fancy[Questions or Comments???]]
 
 .pull-left[
-<img class="circle" src="img/kulas.jpg" width="200px"/>
 
+# .fancy[Find us at...]
+<!--- <img class="circle" src="img/kulas.jpg" width="100px"/> -->
+
+[`r fa(name = "paper-plane")` jtkulas@ergreports.com](mailto:jtkulas@ergreports.com)  
+[`r fa(name = "link")` e`r fa("r-project")`g](https://www.ergreports.com)  
 [`r fa(name = "twitter")` @jtkulas](http://twitter.com/jtkulas)  
+[`r fa(name = "youtube")` Forensic Psychometrics](https://www.youtube.com/@forensicpsychometrics8300)  
 [`r fa(name = "github")` jtkulas](http://github.com/jtkulas)  
-[`r fa(name = "link")` e`r fa("r-project")`g](https://ergweb.netlify.com)  
-[`r fa(name = "paper-plane")` jtkulas@ergweb.com](mailto:jtkulas@ergweb.com)
-]  
+]
 
 .pull-right[
 <img src="img/telescope.jpg" />
@@ -106,23 +109,14 @@ Then press `f` for full-screen mode
 
 # `r fa(name = "laptop", fill = "white")`
 
-On your laptop screen:
+On your computer screen:
 
-Press `p` for presenter mode on laptop
+Press `p` for presenter mode (you'll see some notes)
 ]
 
 ???
 
-When you are in presenter mode, you see your notes but your audience does not! 
-
----
-name: setup
-class: middle, inverse
-
-# Did you do the <br> .fat[.fancy[pre-work setup?]]
-
-.large[https://arm.rbind.io/prework/]
-
+When you are in presenter mode, you see your notes but others do not! 
 
 ---
 name: draw
