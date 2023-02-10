@@ -34,15 +34,14 @@ library(DiagrammeR)
 
 ## https://pkg.garrickadenbuie.com/xaringanExtra/#/scribble
 
-xaringanExtra::use_scribble()          ## page load times much worse with this enabled
+xaringanExtra::use_scribble()          ## page load times much worse with this enabled - allows marking on slides
 ## xaringanExtra::use_slide_tone()     ## use for visually impaired
 
 ```
 
-
 layout: true
   
-<div class="my-footer"><span>ergweb.netlify.app</span></div>
+<div class="my-footer"><span>www.ergreports.com</span></div>
 
 <!-- this adds the link footer to all slides, depends on my-footer class in css-->
 
@@ -52,13 +51,13 @@ class: left, middle, inverse
 background-image: url(img/cover.jpg)
 background-size: cover 
 
-# .white[Feedback Report <br>Slides Tutorial]
+# 
 
-<img src="erg5.png" alt="Sharingan" width="180" />
+<img src="erg2.png" alt="Sharingan" width="400" />
 
-### .white[.large[.fancy[Using e`r fa("r-project")`g <br>feedback slides]]]
+### .white[.large[.fancy[Tutorial on using]]] .large[.Erg[e]`r fa("r-project", fill="#1A1E87")`.erG[g]] <br>.white[.large[.fancy[feedback slides]]]
 
-.white[John-o Kulas | e`r fa("r-project")`g | `r Sys.Date()`]
+.white[John-o Kulas | .Erg[e]`r fa("r-project",fill="#1A1E87")`.erG[g] | `r Sys.Date()`]
 
 <!-- this ends up being the title slide since seal = FALSE-->
 ---
