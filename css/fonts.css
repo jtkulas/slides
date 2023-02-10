@@ -19,7 +19,9 @@ h1, h2, h3 {
 }
 
 .remark-code, .remark-inline-code {
-  font-family: 'Inconsolata', 'Lucida Console', Monaco, monospace;
+  font-family: 'Muli';
+  color: #BF1F9A;
+  font-weight: 800;
 }
 
 .fancy{

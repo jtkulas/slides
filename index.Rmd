@@ -86,22 +86,22 @@ class: left, top, inverse
 name: keyboard-demo
 class: center, middle, inverse
 
-# .fancy[Keyboard shortcuts]
+# .fancy[Navigating the slides]
 
-Press `h` or `?` to see the keyboard shortcuts to aid your slide presentation. 
+Press either the "`h`" or "`?`" key <br> to see your presentation options. 
 
 --
 
-A useful workflow for presenting; if you have two screens, turn off display mirroring then press `c` to clone:
+**Especially** if you have two screens, press `c` to clone your slides:
 
 .pull-left[
 
 # `r fa(name = "desktop", fill = "white")`
 
-On the presentation screen:
+On the **presentation** screen:
 
-Move cloned window to this screen <br>
-Then press `f` for full-screen mode
+Move the cloned window here, <br>
+then press `f` for full-screen mode
 
 ]
 
@@ -109,14 +109,14 @@ Then press `f` for full-screen mode
 
 # `r fa(name = "laptop", fill = "white")`
 
-On your computer screen:
+On **your** computer screen:
 
-Press `p` for presenter mode (you'll see some notes)
+Press `p` for presenter mode 
 ]
 
 ???
 
-When you are in presenter mode, you see your notes but others do not! 
+Your notes will be available to you here in presenter mode (but only you will see them)  
 
 ---
 name: draw
@@ -137,26 +137,6 @@ class: middle, inverse
 ## You can .salt[.fancy[edit]] your slides by activating the pencil:
 
 ![](ezgif.com-gif-maker.gif)
-
----
-name: novice
-class: middle, inverse
-
-
-# What you may not know:
-
---
-
-### <i class="fab fa-js fa-lg fa-fw"></i>&nbsp; JavaScript
-
---
-
-### <i class="fab fa-css3-alt fa-lg fa-fw"></i>&nbsp; CSS (Cascading Style Sheets)
-
---
-
-### <i class="fab fa-html5 fa-lg fa-fw" style="float:left"></i>&nbsp; .saltinline[.fancy[you want awesome HTML5 slides]] 
-
 ---
 name: nutshell
 class: center, middle
