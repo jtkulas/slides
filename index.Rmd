@@ -57,40 +57,33 @@ background-size: cover
 
 ### .salt[.fancy2[Tutorial on using]] .large[.Erg[e]`r fa("r-project", fill="#1A1E87")`.erG[g]] <br>.salt[.fancy2[feedback slides]]
 
-.black[John-o Kulas | .Erg[e]`r fa("r-project",fill="#1A1E87")`.erG[g] | `r Sys.Date()`]
+.black[John-o Kulas | **.large[.Erg[e]`r fa("r-project",fill="#1A1E87")`.erG[g]]** | `r Sys.Date()`]
 
 <!-- this ends up being the title slide since seal = FALSE-->
 ---
 
-class: left, top, inverse
-
-# .salt[.fancy[Questions or Comments???]]
-
-.pull-left[
-
-# .fancy[Find us at...]
-<!--- <img class="circle" src="img/kulas.jpg" width="100px"/> -->
-
-[`r fa(name = "paper-plane")` jtkulas@ergreports.com](mailto:jtkulas@ergreports.com)  
-[`r fa(name = "link")` e`r fa("r-project")`g](https://www.ergreports.com)  
-[`r fa(name = "twitter")` @jtkulas](http://twitter.com/jtkulas)  
-[`r fa(name = "youtube")` Forensic Psychometrics](https://www.youtube.com/@forensicpsychometrics8300)  
-[`r fa(name = "github")` jtkulas](http://github.com/jtkulas)  
-]
-
-.pull-right[
-<img src="img/telescope.jpg" />
-]
-
----
 name: keyboard-demo
 class: center, middle, inverse
 
+.pull-left[
 # .fancy[Navigating the slides]
 
-Press either the "`h`" or "`?`" key <br> to see your presentation options. 
+Press your keyboard's .fancy[.large[.neon["H"]]] key <br> to toggle presentation options. 
+
+![](img/hkey.PNG)
+]
 
 --
+
+.pull-right[
+.large[Take some time to familiarize yourself with your options:]  
+
+![](img/help.PNG)
+]
+
+
+---
+
 
 **Especially** if you have two screens, press `c` to clone your slides:
 
@@ -174,75 +167,22 @@ knitr::include_url("https://jtkulas.github.io/slides/", height = "300px")
 ---
 
 .left-column[
-# Hello `interactive map!`
+### `Interactive Graphics!`
 ]
 
 .right-column[
 
-```{r out.width='100%', fig.height=6, eval=require('leaflet')}
+```{r out.width='100%', fig.height=6, eval=require('leaflet'), echo=FALSE}
 library(leaflet)
 leaflet() %>% addTiles() %>% setView(lat = 45.0482, lng = -93.2474, zoom = 12)
 ```
 ]
 
-
-
----
-
-name: background-image
-
-# Background images
-
-Use the [`background-image` property](https://github.com/gnab/remark/wiki/Markdown#background-image) just like you used classes:
-
-- `background-image: url(https://blah.bla)`
-- `background-size:`
-    - `cover` --> rescales + crops with no empty space
-    - `contain` --> rescales only
-- `background-position:` play with [this](https://www.w3schools.com/cssref/pr_background-position.asp)
-
---
-
-If it is a url: `url(http://bit.ly/arm-greens)`
-
---
-
-If it is a local image, use relative file paths: `url(img/arm-greens.jpg)`
-
-
----
-name: greens-none
-class: center, middle, inverse
-background-size: initial
-background-image: url(http://bit.ly/arm-greens)
-
-
-# .fancy[No background size]
-
-Image size: 6016 × 4016
-
----
-name: greens-cover
-class: center, middle, inverse
-background-image: url(http://bit.ly/arm-greens)
-background-size: cover
-
-# .fancy[Cover]
-
-
----
-name: greens-contain
-background-image: url(http://bit.ly/arm-greens)
-background-size: contain
-class: center, middle, inverse
-
-# .fancy[Contain]
-
 ---
 
 class: left, top, inverse
 
-# .salt[.fancy[Questions or Comments???]]
+# .salt[.fancy[Questions or Feature Requests???]]
 
 .pull-left[
 

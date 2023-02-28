@@ -50,6 +50,20 @@ h1, h2, h3 {
   color: #000000;
 }
 
+.BLACK {
+  color: #000000;
+  font-weight: bold;
+}
+
+.medium { 
+  font-size: 130%;
+}
+
+.neon {
+  color: #6DFC18;
+  font-weight: bold;
+}
+
 /* for mermaid */
 
 .DiagrammeR g .label { 
