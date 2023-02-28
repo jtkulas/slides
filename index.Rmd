@@ -55,7 +55,7 @@ background-size: cover
 
 <img src="erg3.svg" alt="Sharingan" width="400" />
 
-### .salt[.fancy2[Tutorial on using]] .large[.Erg[e]`r fa("r-project", fill="#1A1E87")`.erG[g]] <br>.salt[.fancy2[feedback slides]]
+### .salt[.fancy2[Tutorial on using]] .large[.Erg[e]`r fa("r-project", fill="#1A1E87")`.erG[g]] <br>.salt[.fancy2[report feedback slides]]
 
 .black[John-o Kulas | **.large[.Erg[e]`r fa("r-project",fill="#1A1E87")`.erG[g]]** | `r Sys.Date()`]
 
@@ -203,7 +203,7 @@ class: left, top, inverse
 
 .pull-left[
 
-# .fancy[Find us at...]
+# .fancy[Reach out to us at...]
 <!--- <img class="circle" src="img/kulas.jpg" width="100px"/> -->
 
 [`r fa(name = "paper-plane")` jtkulas@ergreports.com](mailto:jtkulas@ergreports.com)  
