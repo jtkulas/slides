@@ -38,6 +38,18 @@ h1, h2, h3 {
   color: #F9388C;
 }
 
+.bluecircle{
+  font-family: 'Cormorant Upright', serif;
+  font-weight: 500;
+  color: #3399FF;
+}
+
+.redbracket{
+  font-family: 'Cormorant Upright', serif;
+  font-weight: 500;
+  color: #FF0000;
+}
+
 .kulas {
   color: #BF1F9A;
 }

@@ -76,11 +76,28 @@ Press your keyboard's .fancy[.large[.neon["H"]]] key <br> to toggle presentation
 --
 
 .pull-right[
-.large[Take some time to familiarize yourself with your options:]  
+.large[Take some time to familiarize yourself with these options:]  
 
 ![](img/help.PNG)
 ]
 
+---
+
+class: center, middle, inverse
+
+.pull-left[
+Note the difference in option groupings between .large[.bluecircle[navigation...]] 
+
+![](img/help2.PNG)
+]
+
+--
+
+.pull-right[
+...and .large[.redbracket[presentation]]
+
+![](img/help3.PNG)
+]
 
 ---
 
