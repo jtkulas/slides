@@ -66,9 +66,9 @@ name: keyboard-demo
 class: center, middle, inverse
 
 .pull-left[
-# .fancy[Navigating the slides]
+# .fancy[How to use the slides:]
 
-Press your keyboard's .fancy[.large[.neon["H"]]] key <br> to toggle presentation options. 
+Press your keyboard's .fancy[.large[.neon["H"]]] key <br> to view presentation options. 
 
 ![](img/hkey.PNG)
 ]
@@ -76,7 +76,7 @@ Press your keyboard's .fancy[.large[.neon["H"]]] key <br> to toggle presentation
 --
 
 .pull-right[
-.large[Take some time to familiarize yourself with these options:]  
+.large[Take some time to test out these options:]  
 
 ![](img/help.PNG)
 ]
@@ -86,7 +86,7 @@ Press your keyboard's .fancy[.large[.neon["H"]]] key <br> to toggle presentation
 class: center, middle, inverse
 
 .pull-left[
-Note the difference in option groupings between .large[.bluecircle[navigation...]] 
+Note the difference in option groupings between options for  .large[.bluecircle[navigation]]... 
 
 ![](img/help2.PNG)
 ]
@@ -94,13 +94,21 @@ Note the difference in option groupings between .large[.bluecircle[navigation...
 --
 
 .pull-right[
-...and .large[.redbracket[presentation]]
+...and options for .large[.redbracket[presentation]]
 
 ![](img/help3.PNG)
 ]
 
 ---
 
+class: left, middle, inverse
+
+# We'll just be focusing on how to use a few of the most popular .large[.redbracket[presentation]] options:
+
+.right[
+![](img/help4.PNG)
+]
+---
 
 **Especially** if you have two screens, press `c` to clone your slides:
 
@@ -210,8 +218,7 @@ class: left, top, inverse
 [`r fa(name = "link")` e`r fa("r-project")`g](https://www.ergreports.com)  
 [`r fa(name = "twitter")` @jtkulas](http://twitter.com/jtkulas)  
 [`r fa(name = "youtube")` Forensic Psychometrics](https://www.youtube.com/@forensicpsychometrics8300)  
-[`r fa(name = "github")` jtkulas](http://github.com/jtkulas)  
-]
+[`r fa(name = "github")` jtkulas](http://github.com/jtkulas)]  
 
 .pull-right[
 <img src="img/telescope.jpg" />
