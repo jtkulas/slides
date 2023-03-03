@@ -76,7 +76,7 @@ Press your keyboard's .fancy[.large[.neon["H"]]] key <br> to view presentation o
 --
 
 .pull-right[
-.large[Take some time to test out these options:]  
+.large[Take some time to test out some of these options:]  
 
 ![](img/help.PNG)
 ]
@@ -86,7 +86,7 @@ Press your keyboard's .fancy[.large[.neon["H"]]] key <br> to view presentation o
 class: center, middle, inverse
 
 .pull-left[
-Note the difference in option groupings between options for  .large[.bluecircle[navigation]]... 
+...also note the difference in groupings between options for  .large[.bluecircle[navigation]]... 
 
 ![](img/help2.PNG)
 ]
@@ -108,35 +108,55 @@ class: left, middle, inverse
 .right[
 ![](img/help4.PNG)
 ]
+
 ---
 
-**Especially** if you have two screens, press `c` to clone your slides:
+class: left, middle, inverse
+
+.pull-left[.fancy[# 1. Cloning]
+![](img/clone.jpg)
+]
+
+.pull-right[ .large[
++ Most useful if you'd like to use presentation notes  
++ Activated by depressing the ".redbracket[C]" key:  ]
+
+![](img/clone.PNG)
+]
+
+???
+
+Your notes will be available to you here in presenter mode, but only you will view them as long as you present a "cloned" screen.   
+
+---
+
+class: center, middle, inverse
+
+# 1. Cloning (Continued)
 
 .pull-left[
 
 # `r fa(name = "desktop", fill = "white")`
 
-On the **presentation** screen:
+.large[On the **presentation** screen:
 
 Move the cloned window here, <br>
-then press `f` for full-screen mode
-
+then press ".redbracket[F]" for full-screen mode]
 ]
+
+--
 
 .pull-right[
 
 # `r fa(name = "laptop", fill = "white")`
 
-On **your** computer screen:
+.large[On **your laptop** screen:
 
-Press `p` for presenter mode 
+Press ".redbracket[P]" for presenter mode] 
 ]
 
-???
-
-Your notes will be available to you here in presenter mode (but only you will see them)  
-
 ---
+
 name: draw
 class: right, inverse, bottom
 
