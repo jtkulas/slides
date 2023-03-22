@@ -68,7 +68,7 @@ class: center, middle, inverse
 .pull-left[
 # .fancy[How to use the slides:]
 
-Press your keyboard's .fancy[.large[.neon["H"]]] key <br> to view presentation options. 
+Toggle your keyboard's .fancy[.large[.neon["H"]]] key <br> to view presentation options. 
 
 ![](img/hkey.PNG)
 ]
@@ -86,7 +86,7 @@ Press your keyboard's .fancy[.large[.neon["H"]]] key <br> to view presentation o
 class: center, middle, inverse
 
 .pull-left[
-...also note the difference in groupings between options for  .large[.bluecircle[navigation]]... 
+.large[...also note the difference in groupings between options for  .bluecircle[navigation]]... 
 
 ![](img/help2.PNG)
 ]
@@ -94,7 +94,7 @@ class: center, middle, inverse
 --
 
 .pull-right[
-...and options for .large[.redbracket[presentation]]
+.large[...and options for .redbracket[presentation]]
 
 ![](img/help3.PNG)
 ]
@@ -103,7 +103,7 @@ class: center, middle, inverse
 
 class: left, middle, inverse
 
-# We'll just be focusing on how to use a few of the most popular .large[.redbracket[presentation]] options:
+## We'll just be focusing on how to use a few of the most popular .redbracket[presentation] options:
 
 .right[
 ![](img/help4.PNG)
@@ -177,50 +177,74 @@ class: middle, inverse
 ![](ezgif.com-gif-maker.gif)
 ---
 
-name: xaringan
-
-# .center[What is xaringan?]
-
-.pull-left[
-
-.center[
-<img src="https://pluralsight.imgix.net/paths/path-icons/javascript-36f5949a45.png" width="25%"/>
-
-and
-
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Markdown-mark.svg/2000px-Markdown-mark.svg.png" width="20%" />
-
-and
-
-<img src="https://raw.githubusercontent.com/rstudio/hex-stickers/master/PNG/rmarkdown.png" width="20%" />
-]
-
-]
-
---
-
-.pull-right[
-
-To create:
-
-> .fancy["An R package for creating HTML5 presentations with remark.js through R Markdown."]
-
-```{r echo = FALSE}
-knitr::include_url("https://jtkulas.github.io/slides/", height = "300px")
-```
-]
----
-
 .left-column[
-### `Interactive Graphics!`
+## Interactive Graphics:
+
+.large[Several of your slides have interactive components (try scrolling/ clicking the map):]
 ]
 
 .right-column[
 
-```{r out.width='100%', fig.height=6, eval=require('leaflet'), echo=FALSE}
+```{r include=FALSE}
 library(leaflet)
-leaflet() %>% addTiles() %>% setView(lat = 45.0482, lng = -93.2474, zoom = 12)
+library(dplyr)
+library(reticulate)
 ```
+
+```{r, echo=FALSE, warning=FALSE}
+
+content <- paste(sep = "<br/>",
+  "<b><a href='https://ergreports.com/'>eRg HQ</a></b>",
+  "Minneapolis, MN",
+  "55421"
+)
+
+ergIcon <- makeIcon(
+  iconUrl = "https://ergreports.com/images/erg2.png",
+  iconWidth = 60, iconHeight = 50,
+  iconAnchorX = 30, iconAnchorY = 30,
+)
+
+hc_gdpr <- leaflet() %>%
+  setView(lng= -93.24649681376336, lat=44.99948959471243, zoom=5) %>%
+#   addTiles() %>%
+ addProviderTiles(
+    "Stamen.Toner",
+    group = "Stamen.Toner"
+  ) %>%
+    addMarkers(-93.23, 45.0, icon=ergIcon, popup=content)
+  #    addCircleMarkers(-93.23, 45.0, popup=content, radius=20)
+  #  addPopups(-93.23, 45.0, content,
+#    options = popupOptions(closeButton = FALSE)
+#)
+
+
+htmlwidgets::saveWidget(hc_gdpr, "hc_gdpr.html", selfcontained = TRUE, knitrOptions = list())
+hc_gdpr
+## helpful(?) for interactive plots in GitPages sites:
+
+## http://ryankuhn.net/blog/How-To-Use-Plotly-With-Jekyll
+
+## https://bookdown.org/nicohahn/making_maps_with_r5/docs/leaflet.html
+```
+]
+
+---
+
+name: xaringan
+
+.left-column[
+### Interactive Graphics II:
+
+.large[Note the presentation slides embedded within this tutorial:]
+]
+
+.right-column[
+.bottom[
+```{r echo = FALSE}
+knitr::include_url("https://jtkulas.github.io/slides/", height = "300px")
+```
+]
 ]
 
 ---

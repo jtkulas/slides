@@ -40,13 +40,15 @@ h1, h2, h3 {
 
 .bluecircle{
   font-family: 'Cormorant Upright', serif;
-  font-weight: 500;
+  font-weight: 700;
+  font-size: 140%;
   color: #3399FF;
 }
 
 .redbracket{
   font-family: 'Cormorant Upright', serif;
-  font-weight: 500;
+  font-weight: 700;
+  font-size: 140%;
   color: #FF0000;
 }
 
