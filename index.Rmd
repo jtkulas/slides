@@ -76,7 +76,7 @@ Toggle your keyboard's .fancy[.large[.neon["H"]]] key <br> to view presentation 
 --
 
 .pull-right[
-.large[Take some time to test out some of these options:]  
+.large[Take some time to test out some of the options:]  
 
 ![](img/help.PNG)
 ]
@@ -113,15 +113,18 @@ class: left, middle, inverse
 
 class: left, middle, inverse
 
-.pull-left[.fancy[#Cloning:]
-![](img/clone.jpg)
-]
+.pull-left[#.fancy[Cloning:]
 
-.pull-right[ .large[
+.large[
 + Most useful if you'd like to use presentation notes  
 + Activated by depressing the ".redbracket[C]" key:  ]
+]
 
+.pull-right[ 
 ![](img/clone.PNG)
+
+
+![](img/clone.jpg)
 ]
 
 ???
@@ -132,11 +135,11 @@ Your notes will be available to you here in presenter mode, but only you will vi
 
 class: center, middle, inverse
 
-# Cloning (Continued)
+##.fancy[Cloning] (Continued)
 
 .pull-left[
 
-# `r fa(name = "desktop", fill = "white")`
+# 1. `r fa(name = "desktop", fill = "white")`
 
 .large[On the **presentation** screen:
 
@@ -148,7 +151,7 @@ then press ".redbracket[F]" for full-screen mode]
 
 .pull-right[
 
-# `r fa(name = "laptop", fill = "white")`
+# 2. `r fa(name = "laptop", fill = "white")`
 
 .large[On **your laptop** screen:
 
